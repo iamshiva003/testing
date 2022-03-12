@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        body{
+            padding:30px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-family: 'Roboto', sans-serif;
+        }
+        label{
+            font-size: 1.5rem;
+        }
+        #firstname,#secondname{
+            padding: 5px 50px;
+            margin-top: 20px;
+            font-size: 15px;
+            
+        }
+        #firstname{
+            margin-left: 30px;
+        }
+        button{
+            display: block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            border: none;
+        }
+        .container{
+            background-color: white !important;
+            padding:30px;
+        }
+        .number{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label> Enter The Information: </label>
+
+        <form method="post"  action="store.php">
+
+            <label for="firstname">First Name:
+                <input type="text" name="firstname" >
+            </label>
+            <br>
+
+            <label for="secondname">Second Name:
+                <input type="text" name="secondname" >
+            </label>
+            <br>
+
+            <label for="email">Email:
+                <input type="text" name="email" >
+            </label>
+            <br>
+            <label for="number">Phone:
+                <input type="text" name="phone" >
+            </label>
+            <br>
+
+            <button type="submit">Save</button>
+
+        </form>
+    </div>
+</body>
+</html>
